@@ -1,0 +1,209 @@
+{
+  "scope": "Independent on-disc structural comparison; no hardware or emulator execution",
+  "original_chd_sha256": "6d8ea31835863ecc1095d1d09903e4235c4ceb8d39d5ed093eb2981e8a517fe7",
+  "final_chd_sha256": "f9525f1a0cebde5255abf3d9a07a7eea9b961c221417d7cc36253ae918f06148",
+  "file_count": 613,
+  "texture_count": 7158,
+  "track_count": 3,
+  "high_density_sectors": 504150,
+  "low_density_tracks_byte_identical": [
+    {
+      "track": 1,
+      "bytes": 705600,
+      "sha256": "aa4366371be95416636cba1dcaa48c102ae17d42d4f53ba22647c9b31b69ddb8"
+    },
+    {
+      "track": 2,
+      "bytes": 1796928,
+      "sha256": "a4dd3e4a3b5dca4632e00dedc6ed6f4ae544fb9a42a83d71a803353750ba81d1"
+    }
+  ],
+  "boot_sector_and_ip_bin_byte_identical": true,
+  "volume_descriptors_byte_identical": true,
+  "iso9660": {
+    "directory_records": 627,
+    "directories": 5,
+    "path_table_entries": 5
+  },
+  "all_filenames_and_lbas_unchanged": true,
+  "no_file_extent_overlap": true,
+  "changed_files": [
+    {
+      "file": "0GND01.BIN",
+      "old_size": 157760,
+      "new_size": 378320,
+      "sha256": "673f17b89d64a1144be32079c83ac41ad59b883d50b83b573e5d30dbda0f804b"
+    },
+    {
+      "file": "CSTAFF.PVM",
+      "old_size": 3636192,
+      "new_size": 3636192,
+      "sha256": "97425d4529cdd0794aecb5bb1e6933bd4b64b90e960dd5048eeb4e168a8212a5"
+    },
+    {
+      "file": "FRRESULT.BIN",
+      "old_size": 426500,
+      "new_size": 426500,
+      "sha256": "f5ddfa74bb75b8bfec3bce48a7a968e9c173d558b8b8be3d4980b60a6efc9af4"
+    },
+    {
+      "file": "FRRESULT.PVM",
+      "old_size": 1959680,
+      "new_size": 1959680,
+      "sha256": "b317dc351410154f6cda122d35ae1d1bdbb1290bdfeba925740f5f47141c139f"
+    },
+    {
+      "file": "FRTITLE.BIN",
+      "old_size": 585668,
+      "new_size": 585668,
+      "sha256": "135b4fcf071cfed636fe459301d8923cfec9c67d4dae1bbca85cd3407ac1a269"
+    },
+    {
+      "file": "GBRIF.PVM",
+      "old_size": 3280736,
+      "new_size": 3280736,
+      "sha256": "12b695c0b6131a73d5ec2eb899e5929989150a0968c7ca307ce553877390d585"
+    },
+    {
+      "file": "GND01.BIN",
+      "old_size": 6206788,
+      "new_size": 6206788,
+      "sha256": "0cef969f72ea3b715a6b7ab04e6852f15124dc4c0023704c56ab80bacf05a9b4"
+    },
+    {
+      "file": "GND01B.BIN",
+      "old_size": 622308,
+      "new_size": 622308,
+      "sha256": "4067b585020e4757791dd75d40c7e81c150e0d9f4da0431b487a6283c95cb86d"
+    },
+    {
+      "file": "GND01BP.BIN",
+      "old_size": 634628,
+      "new_size": 634628,
+      "sha256": "75cb17345110b63e4d868935f9af02b8e05e505319dbc5b15e686409bc5b4087"
+    },
+    {
+      "file": "GND02.BIN",
+      "old_size": 6971204,
+      "new_size": 6971204,
+      "sha256": "fc1ccab0ac22997666f595527111c27d98950028884912b4fca03859e13d2d79"
+    },
+    {
+      "file": "GND03.BIN",
+      "old_size": 6182340,
+      "new_size": 6182340,
+      "sha256": "c2f7736c61f57fe6e0ccaf95e9972db943fa42268ee38e58b8d99a72ba7d2f09"
+    },
+    {
+      "file": "GND04.BIN",
+      "old_size": 6575492,
+      "new_size": 6575492,
+      "sha256": "737efc33da754c124285ca021a5e63b6c9752c83b781006896f17c2729adce75"
+    },
+    {
+      "file": "GND05.BIN",
+      "old_size": 8312292,
+      "new_size": 8312292,
+      "sha256": "2803c411ed64f5246e6ec3a461e85b38bb60593b1d706366317ae65b1ebd47bd"
+    },
+    {
+      "file": "GND06.BIN",
+      "old_size": 7679300,
+      "new_size": 7679300,
+      "sha256": "a378ced2f3233f082aa63dd409fc0dc0ba55e4fd780bec2b88790cf683848822"
+    },
+    {
+      "file": "GND07.BIN",
+      "old_size": 8470276,
+      "new_size": 8470276,
+      "sha256": "693f71c7431b60a812ceb4734293957e8e7f00303c25da17db0cc6e3abb8c425"
+    },
+    {
+      "file": "GND08.BIN",
+      "old_size": 7110596,
+      "new_size": 7110596,
+      "sha256": "9c5b7b1faadca58a665739a52ca4905a947d9ef72139145224cde1051540d603"
+    },
+    {
+      "file": "GND09.BIN",
+      "old_size": 8025796,
+      "new_size": 8025796,
+      "sha256": "61e470d813f87ad3794f1dee944ba7eeb9be66b208286583d0ec75bb31c48dcf"
+    },
+    {
+      "file": "GNDP01.BIN",
+      "old_size": 6678436,
+      "new_size": 6678436,
+      "sha256": "c605429e9b1d9bdb1963270b291a174d748aa47e600a9b275c2285d8612ac4bd"
+    },
+    {
+      "file": "GUNSTAFF.BIN",
+      "old_size": 417508,
+      "new_size": 417508,
+      "sha256": "9d82d8141a5fc66de299a9b672089261164054d366664c674911753daa3484ac"
+    },
+    {
+      "file": "GUNSTAFF_P.BIN",
+      "old_size": 1521156,
+      "new_size": 1521156,
+      "sha256": "898578461c7455fb0777cfd7710368a4c9b522d3d025ca1850193177e493bc6a"
+    },
+    {
+      "file": "STAFF.PVM",
+      "old_size": 3636192,
+      "new_size": 3636192,
+      "sha256": "ea0ffd1f4bf0b1570f827e52709625934489b1706cc9a0cc336ca45b7fd54fd0"
+    },
+    {
+      "file": "STAFF_P.PVM",
+      "old_size": 2960096,
+      "new_size": 2960096,
+      "sha256": "3c23a7b0b34aaf7548ad920f005328f7bed17bcde2cda52b07d38c2544351ec1"
+    },
+    {
+      "file": "TITLE00.PVM",
+      "old_size": 3190400,
+      "new_size": 3190400,
+      "sha256": "eb4887b65af2d462d25c01052d81ed5a6587def0f94d7e17f5422de6d69a982b"
+    },
+    {
+      "file": "VSRESULT.BIN",
+      "old_size": 418948,
+      "new_size": 418948,
+      "sha256": "a77142127f7aa1562747a3328c104229a37693939673ec7673807e1383005ebd"
+    },
+    {
+      "file": "VSRESULT.PVM",
+      "old_size": 911040,
+      "new_size": 911040,
+      "sha256": "df717ef934150f22d8b23e535036c27a36ac6a4f46b93c3ea2256141d4d56ca4"
+    }
+  ],
+  "changed_file_count": 25,
+  "unchanged_files_by_extension": {
+    ".PVR": 1,
+    ".SCN": 42,
+    ".B4": 400,
+    ".PVM": 85,
+    ".FPB": 9,
+    ".MPB": 8,
+    ".MSB": 9,
+    ".MLT": 2,
+    ".DRV": 1,
+    ".SFD": 30,
+    ".WAV": 1
+  },
+  "changed_sectors": 2817,
+  "unexpected_sector_changes": [],
+  "all_pvm_headers_dimensions_formats_and_member_offsets_unchanged": true,
+  "all_file_bytes_match_declared_changes": true,
+  "resident_extension": {
+    "old_size": 157760,
+    "new_size": 378320,
+    "available_bytes": 466944,
+    "previously_zero": true,
+    "iso_little_and_big_endian_sizes_match": true
+  },
+  "hardware_execution_tested": false,
+  "errors": []
+}

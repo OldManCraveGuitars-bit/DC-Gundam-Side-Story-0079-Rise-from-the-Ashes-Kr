@@ -1,0 +1,428 @@
+{
+  "scope": "Static linked binary/data audit, not hardware execution",
+  "payload_sha256": "bdccc7d102ce8fb12501d82189a159edd7aa7868248352d0a7df83b10923759d",
+  "allocated_sections": [
+    {
+      "section": ".text",
+      "start": "0x8c090000",
+      "size": 5220,
+      "type": 1
+    },
+    {
+      "section": ".rodata",
+      "start": "0x8c091464",
+      "size": 215208,
+      "type": 1
+    },
+    {
+      "section": ".bss",
+      "start": "0x8c0c5d20",
+      "size": 163936,
+      "type": 8
+    }
+  ],
+  "payload_start": "0x8c090000",
+  "payload_end": "0x8c0edd80",
+  "original_resident_bss_end": "0x8c08dea0",
+  "gap_before_payload_bytes": 8544,
+  "loader_callback": "0x8c0f0000",
+  "gap_after_payload_bytes": 8832,
+  "elf32_little_endian_sh4": true,
+  "undefined_symbols": [],
+  "unresolved_relocations": 0,
+  "compiled_tables_match_binary": true,
+  "cues_checked": 1584,
+  "glyphs_checked": 779,
+  "bindings_checked": 428,
+  "max_line_advance_pixels": 608,
+  "clipped_font_glyphs": [],
+  "half_width_space_advance": 8,
+  "original_crt_ranges": [
+    {
+      "file": "0GND01.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c036840",
+          "0x8c05da00"
+        ],
+        [
+          "0x8c014920",
+          "0x8c014920"
+        ],
+        [
+          "0x8c05da00",
+          "0x8c08dea0"
+        ],
+        [
+          "0x8c036840",
+          "0x8c036840"
+        ]
+      ]
+    },
+    {
+      "file": "FRRESULT.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c168220",
+          "0x8c1adc40"
+        ],
+        [
+          "0x8c112ac0",
+          "0x8c112ac0"
+        ],
+        [
+          "0x8c1adc40",
+          "0x8c22e780"
+        ],
+        [
+          "0x8c160200",
+          "0x8c160200"
+        ]
+      ]
+    },
+    {
+      "file": "FRTITLE.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c18efe0",
+          "0x8c1d89c0"
+        ],
+        [
+          "0x8c135e40",
+          "0x8c135e40"
+        ],
+        [
+          "0x8c1d89c0",
+          "0x8c259c00"
+        ],
+        [
+          "0x8c186fc0",
+          "0x8c186fc0"
+        ]
+      ]
+    },
+    {
+      "file": "GND01.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c6eb560",
+          "0x8c884040"
+        ],
+        [
+          "0x8c682a00",
+          "0x8c682a00"
+        ],
+        [
+          "0x8c884040",
+          "0x8c8e3580"
+        ],
+        [
+          "0x8c6e3540",
+          "0x8c6e3540"
+        ]
+      ]
+    },
+    {
+      "file": "GND01B.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c197f00",
+          "0x8c2c8ee0"
+        ],
+        [
+          "0x8c1384c0",
+          "0x8c1384c0"
+        ],
+        [
+          "0x8c2c8ee0",
+          "0x8c349b20"
+        ],
+        [
+          "0x8c18fee0",
+          "0x8c18fee0"
+        ]
+      ]
+    },
+    {
+      "file": "GND01BP.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c19af20",
+          "0x8c2cbd60"
+        ],
+        [
+          "0x8c13b4a0",
+          "0x8c13b4a0"
+        ],
+        [
+          "0x8c2cbd60",
+          "0x8c34c9a0"
+        ],
+        [
+          "0x8c192f00",
+          "0x8c192f00"
+        ]
+      ]
+    },
+    {
+      "file": "GND02.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c7a5f60",
+          "0x8c940960"
+        ],
+        [
+          "0x8c73d400",
+          "0x8c73d400"
+        ],
+        [
+          "0x8c940960",
+          "0x8c99fea0"
+        ],
+        [
+          "0x8c79df40",
+          "0x8c79df40"
+        ]
+      ]
+    },
+    {
+      "file": "GND03.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c6e55e0",
+          "0x8c87db60"
+        ],
+        [
+          "0x8c67ca80",
+          "0x8c67ca80"
+        ],
+        [
+          "0x8c87db60",
+          "0x8c8dd0a0"
+        ],
+        [
+          "0x8c6dd5c0",
+          "0x8c6dd5c0"
+        ]
+      ]
+    },
+    {
+      "file": "GND04.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c7455a0",
+          "0x8c8de6c0"
+        ],
+        [
+          "0x8c6dca40",
+          "0x8c6dca40"
+        ],
+        [
+          "0x8c8de6c0",
+          "0x8c93dc00"
+        ],
+        [
+          "0x8c73d580",
+          "0x8c73d580"
+        ]
+      ]
+    },
+    {
+      "file": "GND05.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c8ed600",
+          "0x8ca878e0"
+        ],
+        [
+          "0x8c884aa0",
+          "0x8c884aa0"
+        ],
+        [
+          "0x8ca878e0",
+          "0x8cae6e20"
+        ],
+        [
+          "0x8c8e55e0",
+          "0x8c8e55e0"
+        ]
+      ]
+    },
+    {
+      "file": "GND06.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c852d60",
+          "0x8c9eada0"
+        ],
+        [
+          "0x8c7ea200",
+          "0x8c7ea200"
+        ],
+        [
+          "0x8c9eada0",
+          "0x8ca4a2e0"
+        ],
+        [
+          "0x8c84ad40",
+          "0x8c84ad40"
+        ]
+      ]
+    },
+    {
+      "file": "GND07.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c913f20",
+          "0x8caabfa0"
+        ],
+        [
+          "0x8c8ab3c0",
+          "0x8c8ab3c0"
+        ],
+        [
+          "0x8caabfa0",
+          "0x8cb0b4e0"
+        ],
+        [
+          "0x8c90bf00",
+          "0x8c90bf00"
+        ]
+      ]
+    },
+    {
+      "file": "GND08.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c7c7fe0",
+          "0x8c961680"
+        ],
+        [
+          "0x8c75f480",
+          "0x8c75f480"
+        ],
+        [
+          "0x8c961680",
+          "0x8c9c0bc0"
+        ],
+        [
+          "0x8c7bffc0",
+          "0x8c7bffc0"
+        ]
+      ]
+    },
+    {
+      "file": "GND09.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c8a76e0",
+          "0x8ca3fbe0"
+        ],
+        [
+          "0x8c83eb80",
+          "0x8c83eb80"
+        ],
+        [
+          "0x8ca3fbe0",
+          "0x8ca9f120"
+        ],
+        [
+          "0x8c89f6c0",
+          "0x8c89f6c0"
+        ]
+      ]
+    },
+    {
+      "file": "GNDP01.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c75e7c0",
+          "0x8c8f6ec0"
+        ],
+        [
+          "0x8c6f5c60",
+          "0x8c6f5c60"
+        ],
+        [
+          "0x8c8f6ec0",
+          "0x8c956400"
+        ],
+        [
+          "0x8c7567a0",
+          "0x8c7567a0"
+        ]
+      ]
+    },
+    {
+      "file": "GUNSTAFF.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c165f00",
+          "0x8c1b4140"
+        ],
+        [
+          "0x8c112660",
+          "0x8c112660"
+        ],
+        [
+          "0x8c1b4140",
+          "0x8c212fe0"
+        ],
+        [
+          "0x8c15dee0",
+          "0x8c15dee0"
+        ]
+      ]
+    },
+    {
+      "file": "GUNSTAFF_P.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c273620",
+          "0x8c2c73a0"
+        ],
+        [
+          "0x8c1e4fe0",
+          "0x8c1e4fe0"
+        ],
+        [
+          "0x8c2c73a0",
+          "0x8c3263a0"
+        ],
+        [
+          "0x8c26b600",
+          "0x8c26b600"
+        ]
+      ]
+    },
+    {
+      "file": "VSRESULT.BIN",
+      "crt_initialization_ranges": [
+        [
+          "0x8c1664a0",
+          "0x8c1ab600"
+        ],
+        [
+          "0x8c110e00",
+          "0x8c110e00"
+        ],
+        [
+          "0x8c1ab600",
+          "0x8c22c140"
+        ],
+        [
+          "0x8c15e480",
+          "0x8c15e480"
+        ]
+      ]
+    }
+  ],
+  "original_crt_ranges_overlap_native_payload": false,
+  "module_fingerprints_and_trampolines_checked": 17,
+  "dma_source_alignment": 32,
+  "dma_stream_bytes": 163840,
+  "caption_packet_overflow_uses_original_transfer": true,
+  "no_new_blocking_wait_for_dma": true,
+  "hardware_execution_tested": false,
+  "errors": []
+}

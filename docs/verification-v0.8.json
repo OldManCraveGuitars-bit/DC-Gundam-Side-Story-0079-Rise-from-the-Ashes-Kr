@@ -1,0 +1,71 @@
+{
+  "version": "v0.8",
+  "release_patcher": {
+    "size": 13587859,
+    "sha256": "54cd701df24a814b6b8dbe35941d25b148dbb16735a6220e2c8b4f60b7ef5d73"
+  },
+  "roundtrip": {
+    "success": true,
+    "output_sha256": "f9525f1a0cebde5255abf3d9a07a7eea9b961c221417d7cc36253ae918f06148",
+    "original_file_unchanged": true,
+    "changed_sectors": 2817,
+    "unicode_source_and_output_paths": true,
+    "elapsed_seconds": 104.97,
+    "chdman_raw_sha1_and_overall_sha1_verified": true
+  },
+  "negative_tests": {
+    "checks": [
+      {
+        "case": "same-path",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "existing-output",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "wrong-size",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "wrong-hash",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "already-patched",
+        "rejected": true,
+        "exit_code": 1
+      }
+    ],
+    "existing_output_unchanged": true,
+    "frozen_gui_selftest": {
+      "success": true,
+      "gui_constructed": true,
+      "gui_requested_size_within_window": true,
+      "version": "0.8"
+    }
+  },
+  "final_chd_cold_boot": {
+    "fresh_boot": true,
+    "savestate_loaded": false,
+    "ram_payload_injection": false,
+    "native_caption_visible": true,
+    "source": "current v0.8 CHD"
+  },
+  "current_runtime_examples": [
+    "G20.SFD",
+    "MOVIE01.SFD",
+    "BR02.B4",
+    "ST01ST.B4"
+  ],
+  "game_videos_byte_identical": 30,
+  "game_voice_files_byte_identical": 400,
+  "hardware_execution_tested": false,
+  "full_playthrough_completed": false,
+  "full_audio_listening_completed": false,
+  "withheld_noisy_cues": 4
+}
