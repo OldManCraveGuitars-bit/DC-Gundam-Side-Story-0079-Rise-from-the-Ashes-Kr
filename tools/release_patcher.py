@@ -18,6 +18,8 @@ import time
 import uuid
 import zlib
 
+BUILD_VERSION = '0.81'
+
 
 def resources() -> Path:
     if getattr(sys, 'frozen', False):
@@ -25,7 +27,7 @@ def resources() -> Path:
     base = Path(__file__).resolve().parents[1]
     if (base / 'payload/manifest.json').is_file():
         return base / 'payload'
-    return base / 'release/v0.8/payload'
+    return base / f'release/v{BUILD_VERSION}/payload'
 
 
 def sha(path: Path) -> str:
@@ -167,7 +169,10 @@ def apply(source: Path, output: Path, notify=lambda text: None) -> dict:
         raise ValueError('출력 파일이 이미 있습니다. 새 파일 이름을 지정하세요.')
     notify('1/6  일본판 원본의 크기와 SHA-256 확인 중…')
     if source.is_file() and source.stat().st_size == m['target']['size'] and sha(source) == m['target']['sha256']:
-        raise ValueError('이미 v0.8 패치가 적용된 파일입니다. 패치 전 일본판 원본을 선택하세요.')
+        raise ValueError(f"이미 v{m['version']} 패치가 적용된 파일입니다. 패치 전 일본판 원본을 선택하세요.")
+    for previous in m.get('previous_outputs', []):
+        if source.is_file() and source.stat().st_size == previous['size'] and sha(source) == previous['sha256']:
+            raise ValueError(f"이전 v{previous['version']} 한글판입니다. v{m['version']}은 패치 전 일본판 원본에 적용하세요.")
     source_sha = check_file(source, m['source'], '일본판 원본 CHD')
     notify('2/6  내장 패치와 적용 도구 확인 중…')
     patch = resources() / m['patch']['file']
@@ -180,7 +185,7 @@ def apply(source: Path, output: Path, notify=lambda text: None) -> dict:
     if shutil.disk_usage(output.parent).free < 3 * 1024 * 1024 * 1024:
         raise ValueError('출력 드라이브에 최소 3GB의 여유 공간이 필요합니다.')
     started = time.monotonic()
-    with tempfile.TemporaryDirectory(prefix='.gundam-kr-v0.8-', dir=output.parent) as folder:
+    with tempfile.TemporaryDirectory(prefix=f".gundam-kr-v{m['version']}-", dir=output.parent) as folder:
         temporary = Path(folder) / 'translated.chd'
         work = Path(folder)
         notify('3/6  원본 CHD를 임시 작업 공간에서 읽는 중…')
@@ -213,7 +218,7 @@ def apply(source: Path, output: Path, notify=lambda text: None) -> dict:
         changed_sectors=len(sectors), chdman_verification=verification,
         elapsed_seconds=round(time.monotonic() - started, 2),
     )
-    receipt = output.with_suffix('.v0.8-patch-result.json')
+    receipt = output.with_suffix(f".v{m['version']}-patch-result.json")
     if receipt.exists():
         receipt = output.with_name(output.stem + '.' + uuid.uuid4().hex[:8] + '.patch-result.json')
     try:
@@ -234,7 +239,8 @@ class App:
         from tkinter import filedialog, messagebox, ttk
         self.tk, self.messagebox = tk, messagebox
         self.root = root = tk.Tk()
-        root.title('건담 외전 · 콜로니가 떨어진 땅에서 한국어 패치 v0.8')
+        version = manifest()['version']
+        root.title(f'건담 외전 · 콜로니가 떨어진 땅에서 한국어 패치 v{version}')
         root.geometry('760x435')
         root.minsize(760, 435)
         self.source = tk.StringVar()
@@ -245,7 +251,7 @@ class App:
         box = ttk.Frame(root, padding=22)
         box.pack(fill='both', expand=True)
         ttk.Label(box, text='건담 외전 — 콜로니가 떨어진 땅에서', font=('맑은 고딕', 17, 'bold')).pack(anchor='w')
-        ttk.Label(box, text='Dreamcast 일본판 Special Edition · 한국어 패치 v0.8', font=('맑은 고딕', 11)).pack(anchor='w', pady=(7, 3))
+        ttk.Label(box, text=f'Dreamcast 일본판 Special Edition · 한국어 패치 v{version}', font=('맑은 고딕', 11)).pack(anchor='w', pady=(7, 3))
         ttk.Label(box, text='한글화: 기타 깎는 노인', font=('맑은 고딕', 10)).pack(anchor='w', pady=(0, 17))
         self.controls = []
         for label, variable, is_source in [('원본 CHD', self.source, True), ('저장할 CHD', self.output, False)]:
@@ -355,7 +361,7 @@ def main() -> int:
             app.root.withdraw()
             app.root.update_idletasks()
             assert not app.busy and len(app.controls) == 4
-            assert 'v0.8' in app.root.title()
+            assert f"v{manifest()['version']}" in app.root.title()
             assert app.root.winfo_reqwidth() <= 760 and app.root.winfo_reqheight() <= 435
             app.root.destroy()
             result = dict(success=True, gui_constructed=True, gui_requested_size_within_window=True, version=manifest()['version'])

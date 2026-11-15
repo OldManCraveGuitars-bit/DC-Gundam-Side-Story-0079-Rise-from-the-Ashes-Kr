@@ -1,28 +1,28 @@
 {
-  "version": "v0.8",
+  "version": "v0.81",
   "source": {
     "size": 513023163,
     "sha256": "6d8ea31835863ecc1095d1d09903e4235c4ceb8d39d5ed093eb2981e8a517fe7"
   },
   "target": {
-    "filename": "Gundam-Side-Story-0079-Korean-v0.8.chd",
-    "size": 506637273,
-    "sha256": "f9525f1a0cebde5255abf3d9a07a7eea9b961c221417d7cc36253ae918f06148"
+    "filename": "Gundam-Side-Story-0079-Korean-v0.81.chd",
+    "size": 506635247,
+    "sha256": "1a34f44e0366d6a79e6dc8bd5835650fa3078b025169d47f54ad0136f45ffdff"
   },
   "release_assets": {
-    "DC-Gundam-Side-Story-0079-Kr-Patcher-v0.8.exe": {
-      "size": 13587859,
-      "sha256": "54cd701df24a814b6b8dbe35941d25b148dbb16735a6220e2c8b4f60b7ef5d73"
+    "DC-Gundam-Side-Story-0079-Kr-Patcher-v0.81.exe": {
+      "size": 13587637,
+      "sha256": "a91b3dd19a52566ba6d75a5292a187c82712791ae00a26b25abd2b665b57017f"
     },
-    "DC-Gundam-Side-Story-0079-Kr-v0.8.zip": {
-      "size": 15191492,
-      "sha256": "d5794974ad603263ea1fe64c8b937b300f20414d073199173209fc3bcb821fee"
+    "DC-Gundam-Side-Story-0079-Kr-v0.81.zip": {
+      "size": 15191209,
+      "sha256": "95e37b3b547da1cfd65fe29573078bf6324c1b1158977198e8338c6f74c1aee5"
     }
   },
   "sector_patch": {
     "file": "sectors.bin.zlib",
-    "size": 676082,
-    "sha256": "7dd8b45764ca214e48190d372fd5623014ff876fdc9384792fc6b4f4e5492dbb",
+    "size": 673463,
+    "sha256": "1e45870f9a473d4c1dd0bd1f3916a2736b308f6c7db747c521505aa762b5029e",
     "uncompressed_size": 5870652,
     "changed_sectors": 2817
   },

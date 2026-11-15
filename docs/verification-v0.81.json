@@ -1,0 +1,77 @@
+{
+  "version": "v0.81",
+  "release_patcher": {
+    "size": 13587637,
+    "sha256": "a91b3dd19a52566ba6d75a5292a187c82712791ae00a26b25abd2b665b57017f"
+  },
+  "roundtrip": {
+    "success": true,
+    "output_sha256": "1a34f44e0366d6a79e6dc8bd5835650fa3078b025169d47f54ad0136f45ffdff",
+    "original_file_unchanged": true,
+    "changed_sectors": 2817,
+    "unicode_source_and_output_paths": true,
+    "elapsed_seconds": 106.6,
+    "chdman_raw_sha1_and_overall_sha1_verified": true
+  },
+  "negative_tests": {
+    "checks": [
+      {
+        "case": "same-path",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "existing-output",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "wrong-size",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "wrong-hash",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "already-v081",
+        "rejected": true,
+        "exit_code": 1
+      },
+      {
+        "case": "prior-v08",
+        "rejected": true,
+        "exit_code": 1
+      }
+    ],
+    "existing_output_unchanged": true,
+    "frozen_gui_selftest": {
+      "success": true,
+      "gui_constructed": true,
+      "gui_requested_size_within_window": true,
+      "version": "0.81"
+    }
+  },
+  "current_runtime_boot": {
+    "source": "Fresh rebuilt GDI; final CHD independently extracted and structurally audited",
+    "savestate_loaded": false,
+    "ram_payload_injection": false,
+    "main_screen_and_selection_pulses_verified": true
+  },
+  "native_subtitle_code_unchanged_from_v08": true,
+  "menu_font": {
+    "family": "Hahmlet Black",
+    "weight": 900,
+    "start_ink_height": 22,
+    "menu_ink_height": 18
+  },
+  "pulse_timing_and_layer_order_code_unchanged": true,
+  "original_videos_byte_identical": 30,
+  "original_voice_files_byte_identical": 400,
+  "hardware_execution_tested": false,
+  "full_playthrough_completed": false,
+  "full_audio_listening_completed": false,
+  "withheld_noisy_cues": 4
+}

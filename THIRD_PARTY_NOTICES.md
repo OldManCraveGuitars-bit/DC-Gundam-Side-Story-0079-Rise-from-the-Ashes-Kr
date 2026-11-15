@@ -24,3 +24,10 @@ Python 3.13.15와 Tcl/Tk 8.6을 PyInstaller 6.22.3으로 묶었습니다. Python
 ## 패치에 사용한 글꼴
 
 Noto Sans KR, 나눔고딕, MaruMinya Hangul, Galmuri의 SIL Open Font License 안내를 함께 제공합니다. 번들 라이선스는 게임 자료에 새 라이선스를 부여하지 않습니다.
+
+## 함렡(Hahmlet)
+
+메인 화면 글리프에 Hahmlet Black(weight 900)을 사용했습니다. SIL Open Font License 1.1 전문을 함께 제공합니다.
+
+- 공식 배포: https://fonts.google.com/specimen/Hahmlet
+- 소스 및 OFL: https://github.com/google/fonts/tree/main/ofl/hahmlet

@@ -1,5 +1,5 @@
 {
-  "version": "0.8",
+  "version": "0.81",
   "game": "Gundam Side Story 0079 - Rise from the Ashes - Special Edition (Japan)",
   "credit": "한글화: 기타 깎는 노인",
   "source": {
@@ -7,9 +7,9 @@
     "sha256": "6d8ea31835863ecc1095d1d09903e4235c4ceb8d39d5ed093eb2981e8a517fe7"
   },
   "target": {
-    "filename": "Gundam-Side-Story-0079-Korean-v0.8.chd",
-    "size": 506637273,
-    "sha256": "f9525f1a0cebde5255abf3d9a07a7eea9b961c221417d7cc36253ae918f06148"
+    "filename": "Gundam-Side-Story-0079-Korean-v0.81.chd",
+    "size": 506635247,
+    "sha256": "1a34f44e0366d6a79e6dc8bd5835650fa3078b025169d47f54ad0136f45ffdff"
   },
   "tracks": [
     {
@@ -39,12 +39,12 @@
     "target_sector_size": 2048,
     "sectors": 504150,
     "source_logical_sha256": "ae218b3e48d76b0f81514c2fd3311b9324e3a7913bde4f6768c521b3035d4b10",
-    "target_logical_sha256": "3dd6fe59ddf0412d6943f4296c14e7d5a0fd15f9e8791484982505a11ff2f0d8"
+    "target_logical_sha256": "f45c6379552a2e590e34d0c6a4b2073c634a6410c9ea0b0d141228cdd036a7c2"
   },
   "patch": {
     "file": "sectors.bin.zlib",
-    "size": 676082,
-    "sha256": "7dd8b45764ca214e48190d372fd5623014ff876fdc9384792fc6b4f4e5492dbb",
+    "size": 673463,
+    "sha256": "1e45870f9a473d4c1dd0bd1f3916a2736b308f6c7db747c521505aa762b5029e",
     "uncompressed_size": 5870652,
     "changed_sectors": 2817
   },
@@ -53,5 +53,13 @@
     "version": "0.264",
     "size": 3027456,
     "sha256": "58d5f13b14a07d0d65f05fbaa5d78f62e85a0e98c6f4c89e423e44998b3ddff8"
-  }
+  },
+  "previous_outputs": [
+    {
+      "version": "0.8",
+      "filename": "Gundam-Side-Story-0079-Korean-v0.8.chd",
+      "size": 506637273,
+      "sha256": "f9525f1a0cebde5255abf3d9a07a7eea9b961c221417d7cc36253ae918f06148"
+    }
+  ]
 }

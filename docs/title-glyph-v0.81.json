@@ -1,0 +1,222 @@
+{
+  "font": "Hahmlet Black",
+  "font_weight": 900,
+  "font_source": "https://github.com/google/fonts/tree/main/ofl/hahmlet",
+  "font_sha256": "892bffe530255770a7435226154a02f519055ff6bedf64254f37f21d15a59279",
+  "glyph_sets": [
+    18,
+    22
+  ],
+  "placements": [
+    {
+      "name": "start",
+      "text": "START 버튼을 눌러 주세요",
+      "ink_height": 22,
+      "ink_width": 240,
+      "horizontal_fit": 0.7476635514018691,
+      "original_half_space": 11.0,
+      "fitted_half_space": 8.22429906542056,
+      "normal_world": [
+        192,
+        277
+      ],
+      "glow_world": [
+        192,
+        273
+      ],
+      "normal_core_offset": [
+        8,
+        0
+      ],
+      "glow_core_delta": [
+        0,
+        4
+      ],
+      "shared_glyph_core": true
+    },
+    {
+      "name": "new",
+      "text": "새 게임",
+      "ink_height": 18,
+      "ink_width": 62,
+      "horizontal_fit": 1,
+      "original_half_space": 9.0,
+      "fitted_half_space": 9.0,
+      "normal_world": [
+        256,
+        246
+      ],
+      "glow_world": [
+        251,
+        241
+      ],
+      "normal_core_offset": [
+        33,
+        0
+      ],
+      "glow_core_delta": [
+        5,
+        5
+      ],
+      "shared_glyph_core": true
+    },
+    {
+      "name": "continue",
+      "text": "이어 하기",
+      "ink_height": 18,
+      "ink_width": 80,
+      "horizontal_fit": 1,
+      "original_half_space": 9.0,
+      "fitted_half_space": 9.0,
+      "normal_world": [
+        256,
+        274
+      ],
+      "glow_world": [
+        250,
+        269
+      ],
+      "normal_core_offset": [
+        24,
+        0
+      ],
+      "glow_core_delta": [
+        6,
+        5
+      ],
+      "shared_glyph_core": true
+    },
+    {
+      "name": "option",
+      "text": "설정",
+      "ink_height": 18,
+      "ink_width": 35,
+      "horizontal_fit": 1,
+      "original_half_space": 9.0,
+      "fitted_half_space": 9.0,
+      "normal_world": [
+        272,
+        330
+      ],
+      "glow_world": [
+        268,
+        325
+      ],
+      "normal_core_offset": [
+        30,
+        0
+      ],
+      "glow_core_delta": [
+        4,
+        5
+      ],
+      "shared_glyph_core": true
+    },
+    {
+      "name": "extra",
+      "text": "추가 설정",
+      "ink_height": 18,
+      "ink_width": 81,
+      "horizontal_fit": 1,
+      "original_half_space": 9.0,
+      "fitted_half_space": 9.0,
+      "normal_world": [
+        228,
+        358
+      ],
+      "glow_world": [
+        223,
+        353
+      ],
+      "normal_core_offset": [
+        51,
+        0
+      ],
+      "glow_core_delta": [
+        5,
+        5
+      ],
+      "shared_glyph_core": true
+    },
+    {
+      "name": "versus",
+      "text": "건담 대전",
+      "ink_height": 18,
+      "ink_width": 81,
+      "horizontal_fit": 1,
+      "original_half_space": 9.0,
+      "fitted_half_space": 9.0,
+      "normal_world": [
+        256,
+        302
+      ],
+      "glow_world": [
+        251,
+        297
+      ],
+      "normal_core_offset": [
+        23,
+        0
+      ],
+      "glow_core_delta": [
+        5,
+        5
+      ],
+      "shared_glyph_core": true
+    }
+  ],
+  "original_glow_dilation_radius": 3,
+  "original_glow_blur": 1.2,
+  "halo_rgb_white": true,
+  "halo_alpha_only": true,
+  "glyph_shapes_shared": true,
+  "original_render_order_unchanged": true,
+  "original_pulse_timing_unchanged": true,
+  "logo_copyright_and_other_art_byte_identical": true,
+  "start_glow_anchor_restored_to_retail_x": 192,
+  "binary_code_changed": false,
+  "pvr_dimensions_and_sizes_unchanged": true,
+  "runtime_verified": true,
+  "comparison_method": "Native original state vs published v0.8 state vs fresh rebuilt GDI boot; 16 frames per pulse cycle, cyclic peak alignment for visualization. Current candidate CHD independently extracted and audited.",
+  "fresh_build_boot_without_savestate_or_injection": true,
+  "compared_frames_per_case": 16,
+  "original_visible_glow_pixels_peak": 1460,
+  "v08_visible_glow_pixels_peak": 0,
+  "fixed_visible_glow_pixels_peak": 634,
+  "old_halo_low_alpha_rgb_average": 72.12826086956522,
+  "retail_and_fixed_halo_rgb": 255,
+  "changed_files_from_published_v08": [
+    "FRTITLE.BIN",
+    "TITLE00.PVM"
+  ],
+  "candidate_chd": "output/Gundam-Side-Story-0079-Korean-menu-fixed.chd",
+  "candidate_chd_sha256": "1a34f44e0366d6a79e6dc8bd5835650fa3078b025169d47f54ad0136f45ffdff",
+  "chdman_raw_sha1_verified": true,
+  "chdman_overall_sha1_verified": true,
+  "data_structure_audit": "docs/title-glyph-disc-audit.json",
+  "screenshots": [
+    "work/qa/menu-blink-compare/menu-blink-comparison.gif",
+    "work/qa/menu-blink-compare/start-font-comparison.png"
+  ],
+  "release_v08_assets_replaced": false,
+  "changed_title_texture_members": [
+    "ttlmenu",
+    "mjhakko"
+  ],
+  "changed_module_byte_offsets": [
+    "0x17352"
+  ],
+  "native_pulse_and_depth_code_byte_identical": true,
+  "runtime_screenshots": [
+    "work/qa/menu-blink-compare/fresh-start-08.png",
+    "work/qa/menu-blink-compare/fresh-file-question.png",
+    "work/qa/menu-blink-compare/fresh-new-08.png",
+    "work/qa/menu-blink-compare/fresh-continue-08.png",
+    "work/qa/menu-blink-compare/fresh-versus-08.png",
+    "work/qa/menu-blink-compare/fresh-option-08.png"
+  ],
+  "qa_emulator_closed": true,
+  "qa_card_original_restored": true,
+  "released_version": "v0.81",
+  "released_chd_filename": "Gundam-Side-Story-0079-Korean-v0.81.chd"
+}
